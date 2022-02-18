@@ -1,0 +1,394 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>CSS LIST PROPERTIES</title>
+<style>
+	body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.125em;
+        background-color: #E7E77E;
+    }
+	h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #522B29;
+        text-shadow: 5px 5px 6px gray;
+        background-color: #69F45E;
+    }
+	ul.a {
+		list-style-type: circle;
+	}
+	ul.b {
+		list-style-type: square;
+	}
+	ul.c {
+		list-style-type: upper-roman;
+	}
+	ul.d {
+		list-style-type: lower-alpha;
+	}
+	ul.e {
+		list-style-position: outside;
+	}
+	ul.e li{
+        border: 1px solid #000;
+    }
+
+	ul.f {
+		list-style-position: inside;
+	}
+	ul.f li{
+		border: 1px solid #000;
+    }
+
+	
+	ul.image {
+		list-style-image: url("https://img.icons8.com/emoji/48/000000/-emoji-reminder.png");
+	}
+	ul.demo {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul.shorthand{
+		list-style: square inside url("https://img.icons8.com/emoji/48/000000/-emoji-reminder.png");
+	}
+	ol.colors {
+		background:#ff9999;
+		padding: 20px;
+	}
+	ul.colors{
+		background: #3399ff;
+		padding: 20px;
+		
+	}
+	ol.colors li {
+		background: #ffe5e5;
+		padding: 5px;
+		margin-left: 35px;
+	}
+	ul.colors li {
+		background: #cce5ff;
+		margin: 5px;
+	}
+	ul.border {
+		border-left: 5px solid red;
+		background-color: #f1f1f1;
+		list-style-type: none;
+		padding: 10px 20px;
+	}
+	ul.width {
+		list-style-type: none;
+		padding: 0;
+		border: 1px solid #ddd;
+	}
+	
+	ul.width li {
+		padding: 8px 16px;
+		border-bottom: 1px solid #ddd;
+	}
+	<!--ALL OTHER LIST ITEM STYLE MARKER-->
+	ul.g {list-style-type: circle;}
+	ul.h {list-style-type: disc;}
+	ul.i {list-style-type: square;}
+	
+	ol.d {list-style-type: armenian;}
+	ol.e {list-style-type: cjk-ideographic;}
+	ol.f {list-style-type: decimal;}
+	ol.g {list-style-type: decimal-leading-zero;}
+	ol.h {list-style-type: georgian;}
+	ol.i {list-style-type: hebrew;}
+	ol.j {list-style-type: hiragana;}
+	ol.k {list-style-type: hiragana-iroha;}
+	ol.l {list-style-type: katakana;}
+	ol.m {list-style-type: katakana-iroha;}
+	ol.n {list-style-type: lower-alpha;}
+	ol.o {list-style-type: lower-greek;}
+	ol.p {list-style-type: lower-latin;}
+	ol.q {list-style-type: lower-roman;}
+	ol.r {list-style-type: upper-alpha;}
+	ol.s {list-style-type: upper-latin;}
+	ol.t {list-style-type: upper-roman;}
+	ol.u {list-style-type: none;}
+	ol.v {list-style-type: inherit;}
+</style>
+<meta charset="utf-8">
+    <meta name="Heidi Nerrie Tantay" content="Prof. Mary Grace Ventura">
+</head>
+
+<body>
+
+<!-- LIST-STYLE-TYPE-->
+<h1>CSS LIST PROPERTIES</h1>
+
+
+<p>Example of unordered lists:</p>
+<ul class="a">
+	<li>Coffee </li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+
+<p>Exmple of ordered lists:</p>
+<ol class="c">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+
+<!-- IMAGE AS THE LIST ITEM MARKER LIST-STYLE-IMAGE-->
+<p>Image as the List Item Maker</p>
+<ul class="image">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+
+
+<!--Position The List Item Markers-->
+<h1>The List-style-position Property</h1>
+<h2>List-style-position: outside(default):</h2>
+<p>Position The list Item Markers</p>
+<ul class="e">
+	<li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the coffee plant.</li>
+	<li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+	<li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+</ul>
+
+<ul class="f">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+
+
+<!--Remove Default Settings-->
+<p>Default List:</p>
+<ul>
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+
+<p>Remove bullets, margin and padding:</p>
+
+<ul class="demo">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+
+
+
+<!--Shorthand Property-->
+<p>Shorthand Property</p>
+<ul class="shorthand">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+
+
+<!--Styling with Colors-->
+<ol class="colors">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+<ul class="colors">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+
+<!--Customized List with a RED LEFT BORDER-->
+<p>List with a Red left border:</p>
+<ul class="border">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+
+<!-- FULL WIDTH BORDER LIST-->
+<p>Full-width bordered List:</p>
+<ul class="width">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+
+
+<!--ALL OTHER LIST ITEM STYLE MARKER-->
+<p>ALL OTHER LIST ITEM STYLE MARKER</p>
+
+circle
+<ul class="g">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+
+disc
+<ul class="h">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+
+square
+<ul class="i">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+
+armenian
+<ol class="d">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+cjk-ideographic
+<ol class="e">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+decimal
+<ol class="f">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+decimal-leading-zero
+<ol class="g">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+georgian
+<ol class="h">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+hebrew
+<ol class="i">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+hiragana
+<ol class="j">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+hiragana-iroha
+<ol class="k">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+katakana
+<ol class="l">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+katakana-iroha
+<ol class="m">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+lower-alpha
+<ol class="n">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+lower-greek
+<ol class="o">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+lower-latin
+<ol class="p">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+lower-roman
+<ol class="q">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+upper-alpha
+<ol class="r">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+upper-latin
+<ol class="s">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+upper-roman
+<ol class="t">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+none
+<ol class="u">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+inherit
+<ol class="v">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+
+</body>
+
+</html>
